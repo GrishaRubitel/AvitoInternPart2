@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug Main",
+        "type": "go",
+        "request": "launch",
+        "mode": "auto",
+        "program": "${workspaceFolder}/main.go"
+      },
+      {
+        "name": "Debug Tender API Handler",
+        "type": "go",
+        "request": "launch",
+        "mode": "auto",
+        "program": "${workspaceFolder}/tenderApiHandler.go"
+      }
+    ],
+    "compounds": [
+      {
+        "name": "Launch Main and Tender API Handler",
+        "configurations": ["Debug Main", "Debug Tender API Handler"]
+      }
+    ]
+  }
